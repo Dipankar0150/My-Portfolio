@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: white;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  opacity: 0.9;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd369;
+}
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Cards */
+.card {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  color: #222;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Skills list */
+ul li {
+  margin: 10px 0;
+  padding-left: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+
+  background: linear-gradient(135deg, #ff7a18, #ffb347);
+  color: white;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  border-radius: 25px;
+  text-align: center;
+
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* Center back button on project pages */
+body > .btn {
+  display: block;
+  width: fit-content;
+  margin: 30px auto;
+}
