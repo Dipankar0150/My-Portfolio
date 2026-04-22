@@ -1,0 +1,11 @@
+// Smooth scroll effect
+document.querySelectorAll('nav a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href'))
+      .scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+// Simple alert for recruiter interaction
+console.log("Portfolio loaded successfully!");
